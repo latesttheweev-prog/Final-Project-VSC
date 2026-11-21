@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sources & References</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Logo Toggle Button -->
+  <button type="button" id="logoBtn" class="logo-toggle">LOGO</button>
+
+  <!-- Collapsible Left Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#farming">Types of Farming</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+  </aside>
+
+  <!-- Separate Full-Screen Sources Page -->
+  <main class="sources-page">
+    <div class="sources-card">
+      <span class="category-badge">References</span>
+      <h1>Sources & Research</h1>
+      <p class="sources-subtitle">
+        Official agencies, research institutes, and studies referenced for this project:
+      </p>
+
+      <ul class="sources-page-list">
+        <li>
+          <strong>Department of Agriculture (DA) – Republic of the Philippines</strong><br />
+          <span>National programs on sustainable crop production and climate-resilient farming.</span>
+        </li>
+        <li>
+          <strong>Bureau of Fisheries and Aquatic Resources (BFAR)</strong><br />
+          <span>Guidelines on mangrove-friendly aquasilviculture and sustainable coastal fisheries.</span>
+        </li>
+        <li>
+          <strong>Philippine Rice Research Institute (PhilRice)</strong><br />
+          <span>Research on System of Rice Intensification (SRI), Direct Wet-Seeding, and Rice-Duck Farming.</span>
+        </li>
+        <li>
+          <strong>Southeast Asian Fisheries Development Center (SEAFDEC)</strong><br />
+          <span>Studies on Integrated Multi-Trophic Aquaculture (IMTA) and seaweed farming in Southeast Asia.</span>
+        </li>
+      </ul>
+
+      <a href="index.html" class="back-link">Back to Main Website</a>
+    </div>
+  </main>
+
+  <!-- Group & Contacts Footer -->
+  <footer class="sources-footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: Group Number & Name -->
+      <div class="footer-col">
+        <span class="category-badge dark">Group [Number]</span>
+        <h2>[Your Group Name]</h2>
+        <p class="footer-desc">
+          Promoting sustainable agriculture and fishery practices across the Philippines.
+        </p>
+      </div>
+
+      <!-- Column 2: List of Members -->
+      <div class="footer-col">
+        <h3>Group Members</h3>
+        <ul class="footer-list">
+          <li>Member 1 Full Name</li>
+          <li>Member 2 Full Name</li>
+          <li>Member 3 Full Name</li>
+          <li>Member 4 Full Name</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contacts -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-list">
+          <li>Email: yourgroupemail@gmail.com</li>
+          <li>Phone: +63 9XX XXX XXXX</li>
+          <li>Location: Batangas City, Philippines</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-note">CC 100 Final Project • Group [Number] – [Your Group Name]</p>
+  </footer>
+
+  <!-- Single Sidebar Toggle Script -->
+  <script>
+    const logoBtn = document.getElementById("logoBtn");
+    const sidebar = document.getElementById("sidebar");
+
+    logoBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>

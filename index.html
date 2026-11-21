@@ -6,13 +6,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Name</title>
 
-    <!-- Connect CSS -->
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link href="https://googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Floating Logo Toggle Button (Always visible top-left) -->
+  <button type="button" id="logoBtn" class="logo-toggle">LOGO</button>
 
-    <h1>Website Name</h1>
-    <p>Philippine agriculture and fisheries.</p>
+  <!-- Collapsible Left Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="dropdown">
+        <a href="#farming">Types of Farming ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#farming">Land agriculture</a></li>
+          <li><a href="#water-efficiency">Water efficiency</a></li>
+          <li><a href="#aquaculture">Aquaculture</a></li>
+        </ul>
+      </li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
 
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button type="button" id="searchBtn" class="search-btn">
+        <img src="Search.png" alt="Search" />
+      </button>
+    </div>
+  </aside>
+  </nav>
+
+  <!-- Main Hero Section -->
+  <main id="home" class="hero">
+    <h1>WEBSITE NAME</h1>
+    <p>Philippine Agriculture</p>
+  </main>
+<section id="about" class="about-section">
+  <div class="about-box">
+    <h2>What is sustainable farming?</h2>
+    <p>
+      Info about sustainable farming etc Info about sustainable farming etc
+      Info about sustainable farming etc Info about sustainable farming etc
+      Info about sustainable farming etc Info about sustainable farming etc
+    </p>
+  </div>
+</section> 
+  <section id="farming" class="farming-section">
+    <div class="grid-header">
+      <h2>Land Agriculture</h2>
+    </div>
+
+    <div class="farming-grid">
+      <!-- Left -->
+      <a href="#sri" class="farming-card">
+        <img src="Banaue_Rice_Terraces.jpg" alt="System of Rice Intensification (SRI)" />
+        <span>System of Rice Intensification (SRI)</span>
+      </a>
+
+      <!-- Right -->
+      <a href="#irds" class="farming-card">
+        <img src="Rice_Duck_Farming.png" alt="Integrated Rice-Duck Farming System (IRDFS)" />
+        <span>Integrated Rice-Duck Farming System (IRDFS)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PAGE 2: Water efficiency -->
+  <section id="water-efficiency" class="farming-section">
+    <div class="grid-header">
+      <h2>Water Efficiency</h2>
+    </div>
+
+    <div class="farming-grid">
+      <!-- Left -->
+      <a href="#mangrove" class="farming-card">
+        <img src="Mangrove_Aquasilviculture.png" alt="Mangrove-Friendly Aquasilviculture" />
+        <span>Mangrove-Friendly Aquasilviculture</span>
+      </a>
+
+      <!-- Right -->
+      <a href="#wet-seeding" class="farming-card">
+        <img src="Direct_Wet_Seeding.jpg" alt="Direct Wet-Seeding" />
+        <span>Direct Wet-Seeding</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PAGE 3: Aquaculture -->
+  <section id="aquaculture" class="farming-section">
+    <div class="grid-header">
+      <h2>Aquaculture</h2>
+    </div>
+
+    <div class="farming-grid">
+      <!-- Left -->
+      <a href="#seaweed" class="farming-card">
+        <img src="Seaweed_Farming.jpg" alt="Seaweed Farming" />
+        <span>Seaweed Farming</span>
+      </a>
+
+      <!-- Right -->
+      <a href="#imta" class="farming-card">
+        <img src="Integrated_Multi_Trophic_Aquaculture.jpg" alt="Integrated Multi-Trophic Aquaculture (IMTA)" />
+        <span>Integrated Multi-Trophic Aquaculture (IMTA)</span>
+      </a>
+    </div>
+  </section>
+
+   <!-- 1. SRI -->
+  <section id="sri" class="detail-section">
+    <div class="detail-band">
+      <img src="Banaue_Rice_Terraces.jpg" alt="System of Rice Intensification (SRI)" />
+      <div class="detail-text">
+        <span class="category-badge">Land Agriculture</span>
+        <h1>System of Rice Intensification (SRI)</h1>
+        <p>Info about SRI etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Rice-Duck Farming (Make sure id is "irds", NOT "seaweed") -->
+  <section id="irds" class="detail-section">
+    <div class="detail-band reverse">
+      <img src="Rice_Duck_Farming.png" alt="Integrated Rice-Duck Farming System (IRDFS)" />
+      <div class="detail-text">
+        <span class="category-badge">Land Agriculture</span>
+        <h1>Integrated Rice-Duck Farming System (IRDFS)</h1>
+        <p>Info about IRDFS etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Mangrove-Friendly Aquasilviculture -->
+  <section id="mangrove" class="detail-section">
+    <div class="detail-band">
+      <img src="Mangrove_Aquasilviculture.png" alt="Mangrove-Friendly Aquasilviculture" />
+      <div class="detail-text">
+       <span class="category-badge">Water Efficiency</span>
+        <h1>Mangrove-Friendly Aquasilviculture</h1>
+        <p>Info about Mangrove-Friendly Aquasilviculture etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Direct Wet-Seeding -->
+  <section id="wet-seeding" class="detail-section">
+    <div class="detail-band reverse">
+      <img src="Direct_Wet_Seeding.jpg" alt="Direct Wet-Seeding" />
+      <div class="detail-text">
+       <span class="category-badge">Water Efficiency</span>
+        <h1>Direct Wet-Seeding</h1>
+        <p>Info about Direct Wet-Seeding etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Seaweed Farming (Make sure id="seaweed" is on THIS section) -->
+  <section id="seaweed" class="detail-section">
+    <div class="detail-band">
+      <img src="Seaweed_Farming.jpg" alt="Seaweed Farming" />
+      <div class="detail-text">
+        <span class="category-badge">Aquaculture</span>
+        <h1>Seaweed Farming</h1>
+        <p>Info about Seaweed Farming etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. IMTA (Make sure id="imta" is on THIS section) -->
+  <section id="imta" class="detail-section">
+    <div class="detail-band reverse">
+      <img src="Integrated_Multi_Trophic_Aquaculture.jpg" alt="Integrated Multi-Trophic Aquaculture (IMTA)" />
+      <div class="detail-text">
+        <span class="category-badge">Aquaculture</span>
+        <h1>Integrated Multi-Trophic Aquaculture (IMTA)</h1>
+        <p>Info about IMTA etc.</p>
+        <div class="detail-text">
+  <a href="#farming" class="back-link">Back to Types of Farming</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👇 PASTE THIS ENTIRE SCRIPT BLOCK RIGHT HERE 👇 -->
+  <script>
+    // 1. Sidebar Toggle Logic
+    const logoBtn = document.getElementById("logoBtn");
+    const sidebar = document.getElementById("sidebar");
+
+    logoBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+      });
+    });
+
+    // 2. Search Bar Logic
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+
+    function searchPage() {
+      const query = searchInput.value.trim().toLowerCase();
+      if (!query) return;
+
+      const targets = document.querySelectorAll("section, .farming-card, h1, h2, p");
+
+      for (const item of targets) {
+        if (item.textContent.toLowerCase().includes(query)) {
+          sidebar.classList.remove("open");
+          item.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          item.style.outline = "3px solid #facc15";
+          setTimeout(() => {
+            item.style.outline = "none";
+          }, 2000);
+          return;
+        }
+      }
+
+      alert('No results found for "' + searchInput.value + '"');
+    }
+
+    searchBtn.addEventListener("click", searchPage);
+
+    searchInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        searchPage();
+      }
+    });
+        const revealTargets = document.querySelectorAll(".about-box, .grid-header, .farming-card, .detail-band");
+    revealTargets.forEach(el => el.classList.add("reveal"));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealTargets.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
+ <footer id="sources" class="sources-footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: Group Number & Name -->
+      <div class="footer-col">
+        <span class="category-badge dark">Group [Number]</span>
+        <h2>[Your Group Name]</h2>
+        <p class="footer-desc">
+          Promoting sustainable agriculture and fishery practices across the Philippines.
+        </p>
+      </div>
+
+      <!-- Column 2: List of Members -->
+      <div class="footer-col">
+        <h3>Group Members</h3>
+        <ul class="footer-list">
+          <li>Member 1 Full Name</li>
+          <li>Member 2 Full Name</li>
+          <li>Member 3 Full Name</li>
+          <li>Member 4 Full Name</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contacts -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-list">
+          <li>Email: yourgroupemail@gmail.com</li>
+          <li>Phone: +63 9XX XXX XXXX</li>
+          <li>Location: Batangas City, Philippines</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-note">CC 100 Final Project • Group [Number] – [Your Group Name]</p>
+  </footer>
+</body>
