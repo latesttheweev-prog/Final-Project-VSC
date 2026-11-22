@@ -3,96 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sources & References</title>
+  <title>Sources &amp; References | Lupa't Dagat</title>
+
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- lunks to style css -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Floating Logo Toggle Button -->
+  <!-- logo float -->
   <button type="button" id="logoBtn" class="logo-toggle">
     <img src="LupatDagat5.png" alt="Lupat_Dagat Logo" />
   </button>
 
-  <!-- Collapsible Left Sidebar -->
+  <!-- navbar on left -->
   <aside id="sidebar" class="sidebar">
     <ul class="nav-links">
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#farming">Types of Farming</a></li>
+      <li class="dropdown">
+        <a href="index.html#farming">Types of Farming ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#farming">Land agriculture</a></li>
+          <li><a href="index.html#water-efficiency">Water efficiency</a></li>
+          <li><a href="index.html#aquaculture">Aquaculture</a></li>
+        </ul>
+      </li>
       <li><a href="sources.html">Sources</a></li>
     </ul>
   </aside>
 
-  <!-- Separate Full-Screen Sources Page -->
+  <!-- sources & research header -->
   <main class="sources-page">
     <div class="sources-card">
       <span class="category-badge">References</span>
-      <h1>Sources & Research</h1>
+      <h1>Sources &amp; Research</h1>
       <p class="sources-subtitle">
         Official agencies, research institutes, and studies referenced for this project:
       </p>
 
+      <!-- hyperlink reference links -->
       <ul class="sources-page-list">
         <li>
           <strong>National Agricultural Library, U.S. Department of Agriculture. Sustainable Agriculture.</strong><br />
-          <a href="https://usda.gov" target="_blank" rel="noopener noreferrer">
-            https://usda.gov
+          <a href="https://www.nal.usda.gov/farms-and-agricultural-production-systems/sustainable-agriculture" target="_blank" rel="noopener noreferrer">
+            https://www.nal.usda.gov/farms-and-agricultural-production-systems/sustainable-agriculture
           </a>
         </li>
 
         <li>
           <strong>International Rice Research Institute (IRRI). GHG Mitigation in Rice – System of Rice Intensification (SRI).</strong><br />
-          <a href="https://irri.org" target="_blank" rel="noopener noreferrer">
-            https://irri.org
+          <a href="https://ghgmitigation.irri.org/home" target="_blank" rel="noopener noreferrer">
+            https://ghgmitigation.irri.org/home
           </a>
         </li>
 
         <li>
           <strong>Department of Agriculture Regional Field Office CALABARZON. (2022). DA-4A showcases rice+duck farm system, diversification.</strong><br />
-          <a href="https://da.gov.ph" target="_blank" rel="noopener noreferrer">
-            https://da.gov.ph
+          <a href="https://calabarzon.da.gov.ph/da-4a-showcases-riceduck-farm-system-diversification/" target="_blank" rel="noopener noreferrer">
+            https://calabarzon.da.gov.ph/da-4a-showcases-riceduck-farm-system-diversification/
           </a>
         </li>
 
         <li>
           <strong>Primavera, J. H., &amp; Triño, A. T. (2001). Mangrove-friendly aquaculture studies at the SEAFDEC Aquaculture Department. SEAFDEC Aquaculture Department.</strong><br />
-          <a href="https://seafdec.org" target="_blank" rel="noopener noreferrer">
-            https://seafdec.org
+          <a href="https://repository.seafdec.org/" target="_blank" rel="noopener noreferrer">
+            https://repository.seafdec.org/
           </a>
         </li>
 
         <li>
           <strong>Philippine Rice Research Institute (PhilRice). Rice-Based Biosystems Journal (February 2021).</strong><br />
-          <a href="https://philrice.gov.ph" target="_blank" rel="noopener noreferrer">
-            https://philrice.gov.ph
+          <a href="https://www.philrice.gov.ph/wp-content/uploads/2021/04/Rice-Based-Biosystems-Journal-2021-February.pdf" target="_blank" rel="noopener noreferrer">
+            https://www.philrice.gov.ph/wp-content/uploads/2021/04/Rice-Based-Biosystems-Journal-2021-February.pdf
           </a>
         </li>
 
         <li>
           <strong>Southeast Asian Fisheries Development Center/Aquaculture Department (SEAFDEC/AQD). Farming Seaweed (Kappaphycus).</strong><br />
-          <a href="https://seafdec.org.ph" target="_blank" rel="noopener noreferrer">
-            https://seafdec.org.ph
+          <a href="https://www.seafdec.org.ph/seaweed-kappaphycus/" target="_blank" rel="noopener noreferrer">
+            https://www.seafdec.org.ph/seaweed-kappaphycus/
           </a>
         </li>
       </ul>
 
+      <!-- button to go back to main website -->
       <a href="index.html" class="back-link">Back to Main Website</a>
     </div>
   </main>
 
-  <!-- Group & Contacts Footer -->
+  <!-- fooooooterrrr -->
   <footer class="sources-footer">
     <div class="footer-container">
-      
-      <!-- Column 1: Standalone Logo on the Far Left -->
+
       <div class="footer-logo-col">
         <img src="LupatDagat1.png" alt="Lupa't Dagat Logo" class="footer-logo" />
       </div>
 
-      <!-- Column 2: Group 3 & Lupa't Dagat -->
       <div class="footer-col">
         <span class="category-badge dark">Group 3</span>
         <h2>Lupa't Dagat</h2>
@@ -101,7 +112,6 @@
         </p>
       </div>
 
-      <!-- Column 3: Developers -->
       <div class="footer-col">
         <h3>Developers</h3>
         <ul class="footer-list">
@@ -112,7 +122,6 @@
         </ul>
       </div>
 
-      <!-- Column 4: Contact Us -->
       <div class="footer-col">
         <h3>Contact Us</h3>
         <ul class="footer-list">
@@ -127,7 +136,7 @@
     <p class="footer-note">CC 100 Final Project • Group 3 – Lupa't Dagat</p>
   </footer>
 
-  <!-- Single Sidebar Toggle Script -->
+  <!-- js for open and close of sidebar -->
   <script>
     const logoBtn = document.getElementById("logoBtn");
     const sidebar = document.getElementById("sidebar");
