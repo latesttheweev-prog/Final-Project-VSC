@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 
-/* Frosted-Glass Floating Logo Button */
 .logo-toggle {
   position: fixed;
   top: 20px;
@@ -19,19 +18,27 @@ body {
   z-index: 1100;
   background-color: rgba(20, 40, 29, 0.85);
   backdrop-filter: blur(8px);
-  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 20px;
-  font-weight: 700;
+  border-radius: 10px;
+  padding: 6px 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .logo-toggle:hover {
   background-color: #14281d;
+  transform: scale(1.04);
+}
+
+.logo-toggle img {
+  height: 40px;       /* Adjust height (e.g., 36px to 50px) to fit your logo */
+  width: auto;        /* Keeps your logo's original proportions without squishing */
+  display: block;
+  object-fit: contain;
 }
 
 /* Collapsible Left Sidebar */
@@ -45,7 +52,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url("Farmland.jpg");
   background-size: cover;
   background-position: center;
-  padding: 95px 25px 30px 25px;
+  padding: 120px 25px 30px 25px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -435,17 +442,32 @@ body {
 .sources-footer {
   background-color: #112419;
   color: #ffffff;
-  padding: 70px 60px 40px 60px;
-  margin-top: 40px;
+  padding: 70px 60px 40px 35px; /* Reduced left padding (35px) shifts logo closer to the left edge */
+  margin-top: 0;
 }
 
 .footer-container {
-  max-width: 1100px;
-  margin: 0 auto 45px auto;
+  width: 100%;                    /* Removes the 1150px center cap so the logo moves far left */
+  margin: 0 0 45px 0;
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: auto 1.2fr 1fr 1fr;
+  align-items: center;            /* Vertically centers the bigger logo with the text columns */
   gap: 50px;
   text-align: left;
+}
+
+.footer-logo {
+  height: 150px;                  /* Bigger logo size (increase to 170px+ if desired) */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-logo {
+  height: 110px;       /* Adjust size as needed now that there's no white box */
+  width: auto;
+  display: block;
+  object-fit: contain; /* Transparent background, no white box */
 }
 
 .footer-col h2 {
